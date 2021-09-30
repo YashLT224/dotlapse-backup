@@ -1,0 +1,106 @@
+1.) Tags fetch
+https://tsedl8yo75.execute-api.us-east-1.amazonaws.com/visualui/1.0/tags
+
+
+
+
+
+
+
+
+2.)Approvers List
+https://stage-accounts.lambdatest.com/api/user/organization/team
+authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiI0IiwiZXhwIjoxNjYwNjMyOTY5LCJqdGkiOiJqVkl3bWtjWVBEbnh4WHk1clpCYVlLNVRoaW5uUk1DSEFSVG9WVmdXRmZrQjh5TW5sd1lEWUUyOG9ncHVnODY3Z3JwWHprZHhKNWw0SFFPZSIsImlhdCI6MTYyOTA5Njk2OSwibmJmIjoxNjI5MDk2OTY5LCJzdWIiOiI2MjE1MSIsInNjb3BlcyI6IltdIiwiaWQiOjYyMTUxLCJlbWFpbCI6Inlhc2h2QGxhbWJkYXRlc3QuY29tIiwidXNlcm5hbWUiOiJ5YXNodiIsIm5hbWUiOiJ5YXNoIHZlcm1hIiwib3JnYW5pemF0aW9uX2lkIjoxMTc5MzksIm9yZ2FuaXphdGlvbl9yb2xlIjoiQWRtaW4iLCJpbnRlcmNvbV91c2VyX2hhc2giOiI0Yzc3NDg5MjQ2ZDdjNTYwYWEzNGRjMTU0ZTEyZjk3ZGM4ZGMxODgzY2U0ZWVhMDkxZjcxYmRmNzUyYzQxNmVjIiwiY3JlYXRlZF9hdCI6IjIwMjEtMDgtMTJUMDg6MjI6NTFaIn0.j5KXy5WcIf7jZp_J026LfgnAg_lsHprfomXf_jAYsskmzvQ0ff9NqmSZYgcreSbR2tK98SvRIqTblx8PueavgP6moY-0i8Ud3Gyg1Jvlp7e7ukaRjnI50FyQenwRgwju0_6ZR3dbHhTOZQaV5IRYguJ9TQdF-SBDjcidfmc2kkSeE2TrJlEt6bOczlvzet7Zzj91JNn800VaZjFXOzP6OM19OKf5WJYWQsXj0x9P3PwGy2OnjBjs106KGE8bb-Xv5jQGVgAvnW6ZQ6U1evS5wDtwpnKIoRnvQj667aqSkvjasmpNtekLn5hL34hkL9I40yov1UpimG-sTWFKEYRifZ7mlhij99peXsQnTFS0RnOfi8FRYtSGTDzO0UwZR0sgMPkrmEQ9EDukO0BWe1nqBa0HO1PZr3va0jU4Rk71mL_ZgvO6kt9nM2VNdg-5RmzkOazbWDCBG9xSgdz52FaQjAfA2aCbrmyUHPq18WiA_hImRRh5D6NYzbUVu4P14brWKGy5IU0gSV6sywZeFyxJGGiCCO41iz3PQ2kNF6KHosx0pAbqpWOwjDFvssnwyESzi-ODjI6NtMJBKGU0s8k2IeLj4y-wBciBwGUsaNtoln5dp_-3ZX2CG6gmBh372405P7WadtnPZKKuehXErGACXH7wjm5Ck9Sxvk88vXFNZew
+
+
+
+
+
+
+
+3.)project listing
+https://tsedl8yo75.execute-api.us-east-1.amazonaws.com/visualui/1.0/project
+
+body: 
+{
+    "name":"test project 5 yash",
+    "tag": [{
+        "name": "tag 1",
+        "colorCode": "#FDF2ED"
+    },
+    {
+        "name": "tag2",
+        "colorCode": "#FDF2FF"
+    }],
+    "approver": "1,2"
+}
+
+
+
+
+
+
+4.)Create project
+{{host}}/visualui/1.0/project
+
+body:{
+    {
+    "name":"test project 5 yash",
+    "tag": [{
+        "name": "tag 1",
+        "colorCode": "#FDF2ED"
+    },
+    {
+        "name": "tag2",
+        "colorCode": "#FDF2FF"
+    }],
+    "approver": "1,2"
+}
+}
+
+
+
+
+
+
+
+5.) update project and favorite
+ {{host}}//visualui/1.0/project/update
+ https://tsedl8yo75.execute-api.us-east-1.amazonaws.com/visualui/1.0/project/update?projectId=f29f9372-8caa-4910-8c9b-cd89be0c0b63&name=nll&favorite=true
+
+
+
+ 
+ 
+ 
+ 
+ 6.)get build List
+https://tsedl8yo75.execute-api.us-east-1.amazonaws.com/visualui/1.0/build?projectId=22929027-6285-4c41-933d-45614393422e&status=created
+
+
+
+
+7.)create build 
+{{host}}/visualui/1.0/build
+
+body:{
+    "name":"srv build3",
+    "projectId":"22929027-6285-4c41-933d-45614393422e",
+    "baseline":false
+}
+
+
+
+8.delete build
+{{host}}/visualui/1.0/build/af922724-e128-4c66-b741-262a84d92f45
+
+
+
+
+
+
+7.) update build listing
+    7.1 update build name   
+    7.2 update baseline
+
+    {{host}}/visualui/1.0/build/update?buildId=4e2cc34c-262d-46a8-9bb4-95c0fb5ecb32&baseline=&projectid=118a11c6-7dfb-44c5-a593-f3804602d884&name=arush

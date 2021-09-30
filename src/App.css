@@ -1,0 +1,65 @@
+/* common header css */
+
+section.main-section {
+  padding-left: 195px;
+  background: #fafafa;
+  height: auto;
+  padding-top: 66px;
+  padding-right: 15px;
+  height: 100vh;
+}
+
+.main__header__placeholder {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+.header__top__menu__placeholder {
+  padding-left: 200px;
+  height: 52px;
+  background-color: #ffffff;
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  border-bottom: 1px solid #ececec;
+  box-shadow: 0 2px 4px 0 #0000000a;
+}
+.lambda__logo__wrapper__placeholder {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #0ebac5;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  max-width: 180px;
+  padding: 0px 13px;
+  width: 100%;
+}
+.header__aside__menu__placeholder {
+  position: fixed;
+  height: 100%;
+  max-width: 180px;
+  background: #2e3c56;
+  width: 100%;
+  left: 0px;
+  top: 52px;
+}
+
+.main-section {
+  padding-top: 52px !important;
+  padding-right: 0px !important;
+  padding-left: 180px !important;
+}
+
+section.main-section {
+  background-color: white;
+}
+.header__collapsed section.main-section {
+  padding-left: 50px !important;
+}
+
+/* common header css ends */

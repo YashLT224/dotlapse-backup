@@ -1,0 +1,67 @@
+{
+  "name": "dotlapse",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^6.2.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.21.1",
+    "date-fns": "^2.23.0",
+    "dotenv": "^10.0.0",
+    "moment": "^2.29.1",
+    "multiselect-react-dropdown": "^2.0.5",
+    "react": "^17.0.2",
+    "react-date-range": "^1.3.0",
+    "react-dom": "^17.0.2",
+    "react-img-zoom": "^0.1.0",
+    "react-medium-image-zoom": "^4.3.5",
+    "react-multiselect-checkboxes": "^0.1.1",
+    "react-paginate": "^7.1.3",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-select": "^4.3.1",
+    "react-toastify": "^8.0.2",
+    "redux": "^4.1.1",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.3.0",
+    "universal-cookie": "^4.0.4",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "dotenv -e .env.development craco build",
+    "stage-build": "dotenv -e .env.development craco build",
+    "prod-build": "dotenv -e .env.production craco build",
+    "localbuild": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject",
+    "deploy": "aws s3 sync build/ s3://stage-smartui.lambdatest.com --cache-control max-age=0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.36",
+    "react-prismazoom": "^2.0.3",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.7"
+  }
+}
